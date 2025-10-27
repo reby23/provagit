@@ -11,11 +11,12 @@ namespace progetto
         private int nPreseAria;
         private bool frenoAnt;
         private bool frenoPost;
+        private string colore;
 
-        public Moto(int nPreseAria, string marca, string modello, int anno,bool freno) : base(marca, modello, anno, freno)
+        public Moto(int nPreseAria, string marca, string modello, int anno,bool freno, string colore) : base(marca, modello, anno, freno)
         {
             this.nPreseAria = nPreseAria;
-
+            this.colore = colore;
         }
         public void Frena(string tipofreno)
         {
