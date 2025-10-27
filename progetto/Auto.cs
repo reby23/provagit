@@ -10,7 +10,7 @@ namespace progetto
     {
         private int nposti;
 
-        public Auto(int nposti, string marca, string modello, int anno) :base(marca,modello,anno)
+        public Auto(int nposti, string marca, string modello, int anno, bool freno) :base(marca,modello,anno, freno)
         {
             this.nposti = nposti;
         }

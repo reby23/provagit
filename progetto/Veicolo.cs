@@ -13,19 +13,26 @@ namespace progetto
         protected string modello;
         protected int anno;
         protected bool acceso;
+        protected bool freno;
 
-        public Veicolo(string marca, string modello, int anno)
+        public Veicolo(string marca, string modello, int anno,bool freno)
         {
             this.marca = marca;
             this.modello = modello;
             this.anno = anno;
             acceso = false;
+            this.freno = freno; 
         }
 
         private bool OnOff()
         {
             acceso=!acceso;
             return acceso;
+        }
+
+        private void Frena()
+        {
+            freno = !freno;
         }
 
     }
