@@ -11,7 +11,7 @@ namespace progetto
     {
         protected string marca;
         protected string modello;
-        protected int anno;
+        protected bool anno;
         protected bool acceso;
 
         public Veicolo(string marca, string modello, int anno)
